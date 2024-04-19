@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Advertising Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Gshopie</div>
+    
+    <div class="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+    <form id="search-form" class="search-form">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+  </nav>
+
+
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/yourpage" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/yourpage" target="_blank"><img src="images/instagram.jfif" alt="Instagram"></a>
+      <a href="https://www.youtube.com/yourchannel" target="_blank"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+
+
+  
+
+    
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Your Advertising Website</h1>
+    <p>Your value proposition here...</p>
+    <a href="#cta" class="btn">Get Started</a>
+  </section>
+
+
+
+  <!-- Service Section -->
+  <section id="services" class="services-container">
+    <h2>Our Services</h2>
+    <div class="service-card" onclick="showServiceDetails('service1')">
+      <img src="images/pexels-pixabay-39284.jpg" alt="Service 1">
+      <h3>Website Development and Optimization</h3>
+      <p>Our Website Development and Optimization service is ideal for businesses looking 
+        to establish a strong online presence or enhance their existing websites for better
+         performance and user experience. We offer end-to-end website development solutions, 
+         from design conceptualization to implementation and ongoing optimization.</p>
+    </div>
+    <div class="service-card" onclick="showServiceDetails('service2')">
+      <img src="service2.jpg" alt="Service 2">
+      <h3>Service 2</h3>
+      <p>Description of Service 2...</p>
+    </div>
+    <!-- Add more service cards as needed -->
+   </section>
+   
+    <!-- About Us Section -->
+  <section id="about" class="about-container">
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Elements (e.g., carousel, interactive map) -->
+  <section class="interactive">
+    <!-- Your interactive content here -->
+  </section>
+
+  <!-- Customer Reviews and Testimonials -->
+  <section class="social-proof">
+    <h2>What Our Customers Say</h2>
+    <!-- Display customer reviews, ratings, and testimonials here -->
+
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <img src="customer1.jpg" alt="Customer 1">
+            <p>"Great service! I saw immediate results after implementing their digital marketing strategies."</p>
+            <p><strong>John Doe</strong></p>
+        </div>
+        <div class="testimonial">
+            <img src="customer1.jpg" alt="Customer 1">
+            <p>"Great service! I saw immediate results after implementing their digital marketing strategies."</p>
+            <p><strong>John Doe</strong></p>
+        </div>
+        <div class="testimonial">
+            <img src="customer2.jpg" alt="Customer 2">
+            <p>"The website they developed for us not only looks stunning but also performs exceptionally well. Highly recommended!"</p>
+            <p><strong>Jane Smith</strong></p>
+        </div>
+        <div class="testimonial">
+            <img src="customer3.jpg" alt="Customer 3">
+            <p>"Their content creation team is top-notch. They delivered engaging content that resonated with our audience."</p>
+            <p><strong>Michael Johnson</strong></p>
+        </div>
+    </div>
+
+  </section>
+
+  <!-- Contact Information Section -->
+  <section id="contact" class="contact-info">
+    <h2>Contact Us</h2>
+    <p>Email: contact@yourwebsite.com</p>
+    <p>Phone: +123-456-7890</p>
+    <!-- Add a contact form here if needed -->
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="cta">
+    <h2>Ready to Get Started?</h2>
+    <a href="#contact" class="btn">Contact Us</a>
+  </section>
+
+ <!-- Footer section -->
+ <footer>
+    <p>© 2024 Your Company. All rights reserved.</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</footer>
+
+  <!-- JavaScript for interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
